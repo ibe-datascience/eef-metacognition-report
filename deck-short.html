@@ -1029,7 +1029,7 @@ src: url(data:font/ttf;base64,AAEAAAAQAQAABAAAR1BPU4VHMdkAABdEAAAWjEdTVUKOao6oAA
 </div>
 <aside class="notes">
 <p>One sentence to open: we took one Toolkit strand, rebuilt it from scratch with language models, compared every step with what the EEF published, and this is what we learned and what we can offer.</p>
-<p>How this deck works: Right/Left (or Space, or the clicker) moves along the seven main slides. Each main slide has detail slides underneath — press Down, or click a “go deeper” chip. Up or “Back” returns. Press O for the map of all slides.</p>
+<p>How this deck works: Right/Left (or Space, or the clicker) moves along the seven main slides. Most main slides have detail slides underneath — press Down, or click a “go deeper” chip. Up or “Back” returns. Press O for the map of all slides.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1042,10 +1042,9 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section>
 <section id="what" class="title-slide slide level1">
 <h1>LLMs can reproduce an EEF strand — and then keep it up to date</h1>
-<div class="kickrow"><div class="kicker">Executive summary</div><div class="more"><span>Go deeper</span><a href="#/d-steps">The five steps</a><a href="#/d-problem">Why this matters</a></div></div>
+<div class="kickrow"><div class="kicker">Executive summary</div></div>
 <div class="exec">
 <div>
 <div class="lab">1 · The test</div>
@@ -1081,7 +1080,6 @@ display:block!important;
 <p>Two: the result. Where a step has a right answer the models match the EEF: all 11 meta-analyses found, 186 of the 187 studies those reviews list recovered, and the same effect size to the third decimal when the same outcome is taken. On the blind test: this covers the studies that do not come from meta-analyses. We ran the EEF’s single-study search ourselves and screened the roughly 80,000 records it returns on title and abstract. The EEF’s own studies sat among them unmarked; the model saw a title and an abstract and nothing else. Of the 276 EEF records it judged, 263 passed to full-text reading (95%): 199 as clear includes, 64 because the abstract did not say enough. The 13 it rejected: eight because the abstract reports no attainment outcome (self-efficacy, executive function, reasoning, creative thinking), four because the programme did not look metacognitive — two of those had no abstract, only a title — and one for no visible comparison group. Two are plain misreadings (“no improvement in achievement” read as “no achievement outcome”); most of the rest are the same borderline cases the audit flags, such as Peskin (2004) and Liu (2015). If asked about the other 80,000 records: the model screened out 87%, which leaves about 12,000 for full-text reading, not yet done for this corpus. The sharpest part: 36 EEF studies that neither the search nor the meta-analyses reach were slipped in as ordinary records, and the model included 34. One of the two it rejected is Peskin (2004), the paper on the “no metacognition” slide. This is title-and-abstract screening, not the final inclusion decision. Separately, on coverage: of the 30 early EEF records that appear in no meta-analysis, our keyword queries, the citation graph and the EEF’s website reach 25; the five we miss are US dissertations from 1992–2005 held only in ProQuest. Two different models agree with each other at the upper end of what is reported for two human reviewers. Be straight about the judgement steps: which outcome to take from a paper is a choice, and left alone the model lands within 0.10 of the EEF’s figure only about half the time — which is why every verdict comes with a quote and the contested cases go to a person.</p>
 <p>Three: because the reproduction held, we trusted the same system on things with no answer key. Backfill: 25 further meta-analyses from the same period that the search turned up along the way, and well-cited studies the strand does not hold. Forward: the 2022–2026 literature. Revise: the existing strand under a different criterion or with weak records filtered out.</p>
 <p>Bottom line, and say the last clause: the running cost is small because the system has been built and tested first — prompts, a coding protocol for the models, tests against the EEF’s database. That is the work IBE does and what we can bring.</p>
-<p>Below this slide: the five steps with their numbers; then the problem in three numbers and the Cochrane precedent from medicine.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1094,68 +1092,7 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="d-steps" class="slide level2">
-<h2>One strand rebuilt with LLMs, each step checked against the EEF</h2>
-<div class="kickrow"><div class="kicker">Detail · the five steps</div><div class="more"><a class="up" href="#/what">Back</a></div></div>
-<div class="lead">
-<p>One Toolkit strand means 355 effect sizes found, screened, read and coded by hand — and its newest studies are from 2021. Living reviews are the EEF’s stated goal; <strong>what holds them back is labour, not method</strong>.</p>
-</div>
-<div class="steps">
-<div class="step"><span class="n">1</span><span class="what">Find the meta-analyses</span><span class="res">11 of 11</span>used by the EEF found — plus 25 more that meet the same criteria</div>
-<div class="step"><span class="n">2</span><span class="what">Unpack them into primary studies</span><span class="res">186 of 187</span>of the EEF&#39;s studies that those reviews list were recovered</div>
-<div class="step"><span class="n">3</span><span class="what">Check eligibility</span><span class="res">338</span>full texts read against the EEF&#39;s seven inclusion criteria</div>
-<div class="step"><span class="n">4</span><span class="what">Compute effect sizes</span><span class="res">±0.001</span>difference from the EEF when the same outcome is used</div>
-<div class="step"><span class="n">5</span><span class="what">Update forward</span><span class="res">2022–26</span>literature processed with the same chain, in days</div>
-</div>
-<p>Where a step has a clear right answer, the models match the EEF almost exactly. Where it needs judgement, <strong>they show their reasoning</strong>, so a person can decide.</p>
-<aside class="notes">
-<p>The audience knows the Toolkit; the point is that the bottleneck is people’s time. The strand was chosen because the EEF publishes both its source meta-analyses and all 355 study-level effect sizes, so every step can be checked. The one study missed in step 2 is a matching issue (dissertation versus later journal article). Step 4: the arithmetic is reproduced exactly; what differs is which of a paper’s many outcomes is chosen.</p>
-<style type="text/css">
-span.MJX_Assistive_MathML {
-position:absolute!important;
-clip: rect(1px, 1px, 1px, 1px);
-padding: 1px 0 0 0!important;
-border: 0!important;
-height: 1px!important;
-width: 1px!important;
-overflow: hidden!important;
-display:block!important;
-}</style></aside>
-</section>
-<section id="d-problem" class="slide level2">
-<h2>The evidence grows faster than anyone can code it</h2>
-<div class="kickrow"><div class="kicker">Detail · the problem</div><div class="more"><a class="up" href="#/what">Back</a></div></div>
-<div class="cards">
-<div class="card">
-<p><span class="big">355</span> effect sizes from 324 studies, each found, screened, read and coded by hand — for <strong>one</strong> of about 30 Toolkit strands</p>
-</div>
-<div class="card orange">
-<p><span class="big">2021</span> the most recent studies in this strand’s evidence base. The plan foresees one further update per strand before a living rhythm can begin</p>
-</div>
-<div class="card green">
-<p><span class="big sm">Living reviews</span> are the stated end goal of the EEF evidence database. What holds them back is labour, not method</p>
-</div>
-</div>
-<div class="lead">
-<p>Screening, eligibility checks and data extraction are skilled, slow, manual work. That is the constraint we set out to test.</p>
-</div>
-<div class="foot">
-<p>Medicine has shown what is possible: a 2025 study reproduced a full issue of Cochrane reviews (12 reviews, 146,000 citations) with language models in under two days. Education is a harder case — fuzzier definitions, multi-component programmes, untidy outcome reporting — so it needed its own test.</p>
-</div>
-<aside class="notes">
-<p>The Cochrane study is otto-SR (Cao et al., 2025, preprint; covered in Nature).</p>
-<style type="text/css">
-span.MJX_Assistive_MathML {
-position:absolute!important;
-clip: rect(1px, 1px, 1px, 1px);
-padding: 1px 0 0 0!important;
-border: 0!important;
-height: 1px!important;
-width: 1px!important;
-overflow: hidden!important;
-display:block!important;
-}</style></aside>
-</section></section>
+
 <section>
 <section id="trust" class="title-slide slide level1">
 <h1>Every verdict is auditable — and errors in papers get caught</h1>
