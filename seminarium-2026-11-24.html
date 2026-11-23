@@ -3384,4 +3384,21 @@ window.QuartoSupport = function () {
     </script>
     
 
+<script>
+  /* slide numbers: the appendix (.backup) is not counted in the total; its slides are A1, A2, ... */
+  (function () {
+    function number(slide) {
+      var all = Reveal.getHorizontalSlides();
+      var top = slide && slide.closest(".slides > section") || slide;
+      var main = all.filter(function (s) { return !s.classList.contains("backup"); });
+      if (top && top.classList.contains("backup")) {
+        return ["A" + (all.filter(function (s) { return s.classList.contains("backup"); }).indexOf(top) + 1)];
+      }
+      return [main.indexOf(top) + 1, "/", main.length];
+    }
+    function apply() { Reveal.configure({ slideNumber: number }); }
+    function wait() { if (window.Reveal && Reveal.isReady && Reveal.isReady()) apply(); else setTimeout(wait, 50); }
+    wait();
+  })();
+</script>
 </body></html>
