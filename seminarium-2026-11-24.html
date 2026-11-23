@@ -1112,6 +1112,29 @@ src: url(data:font/ttf;base64,AAEAAAAQAQAABAAAR1BPU4VHMdkAABdEAAAWjEdTVUKOao6oAA
 </ul></div>
 </div>
 </section>
+<section id="co-już-wiadomo-o-llm-ach-w-przeglądach-systematycznych" class="slide level2">
+<h2>Co już wiadomo o LLM-ach w metaanalizach/SLR</h2>
+<div class="kickrow"><div class="kicker"><span class="sec">2 · Przegląd literatury</span>pojedyncze kroki są już zbadane</div></div>
+<div class="three">
+<div><b class="h">Screening tytułów i abstraktów</b><span class="lab">najlepiej zbadany krok</span>
+<ul>
+<li>GPT-3.5: czułość (recall) 81–97% przy swoistości (specificity) 26–80% (<a href="https://doi.org/10.7326/M23-3389">Tran i in., 2024</a>)</li>
+<li>GPT-4: wyniki od słabych do umiarkowanych dla abstraktów, bardzo dobre dla pełnych tekstów (<a href="https://doi.org/10.1002/jrsm.1715">Khraisha i in., 2024</a>)</li>
+<li>Metaanaliza 14 modeli: łączna czułość (recall) i swoistość (specificity) bliskie 90% (<a href="https://doi.org/10.21037/jmai-24-408">Kim i in., 2025</a>)</li>
+</ul></div>
+<div class="g"><b class="h">Ekstrakcja danych</b><span class="lab">mniej badań, małe próby</span>
+<ul>
+<li>Trafność (accuracy) 96%: model poprawnie wydobył 154 ze 160 pól danych z 10 badań randomizowanych (<a href="https://doi.org/10.1002/jrsm.1710">Gartlehner i in., 2024</a>)</li>
+<li>Ocenia się trafność pojedynczych pól, a nie to, czy z wydobytych liczb wychodzi to samo łączne oszacowanie</li>
+</ul></div>
+<div class="o"><b class="h">Od czego zależy skuteczność</b><span class="lab">trudność zadania</span>
+<ul>
+<li>Screening maszynowy działa tym lepiej, im wyraźniej rekordy trafne oddzielają się od nietrafnych w przestrzeni osadzeń (<a href="https://doi.org/10.1017/rsm.2024.16">Ali i in., 2025</a>)</li>
+<li>W ośmiu przeglądach klasyfikatory oszczędzały od 1% do 76% pracy przy 95% czułości (recall); GPT-3.5 i GPT-4 dały równie duży rozrzut</li>
+</ul></div>
+</div>
+<div class="why" style="margin-top:18px"><b>Luka badawcza.</b> Przywołane prace oceniają pojedyncze kroki. Nie pokazują, czy cały łańcuch — od wyszukiwania, przez selekcję i ekstrakcję, po łączne oszacowanie — odtwarza opublikowaną metaanalizę, w której każdy krok ma znaną odpowiedź. Nie wiadomo też, co lektura tekstów przez model wnosi <i>ponad</i> odtworzenie pracy człowieka: czy model dostrzega to, czego w ręcznie zbudowanej bazie brakuje.</div>
+</section>
 <section id="returns-to-education-odtworzenie-i-rozszerzenie-metaanalizy" class="slide level2">
 <h2>Returns to education: odtworzenie i rozszerzenie metaanalizy</h2>
 <div class="kickrow"><div class="kicker">metaanaliza stóp zwrotu z wykształcenia</div></div>
@@ -1128,7 +1151,7 @@ src: url(data:font/ttf;base64,AAEAAAAQAQAABAAAR1BPU4VHMdkAABdEAAAWjEdTVUKOao6oAA
 </section>
 <section id="punkt-odniesienia" class="slide level2">
 <h2>Punkt odniesienia: jedna strategia z Toolkitu EEF</h2>
-<div class="kickrow"><div class="kicker"><span class="sec">2 · Wprowadzenie</span>problem badawczy i punkt odniesienia</div><div class="more"><span>zobacz</span><a href="#/aneks-definicja">definicja i sporne włączenie</a></div></div>
+<div class="kickrow"><div class="kicker"><span class="sec">3 · Wprowadzenie</span>problem badawczy i punkt odniesienia</div><div class="more"><span>zobacz</span><a href="#/aneks-definicja">definicja i sporne włączenie</a></div></div>
 <div class="columns">
 <div class="column" style="width:52%;">
 <div class="tight">
@@ -1151,29 +1174,6 @@ src: url(data:font/ttf;base64,AAEAAAAQAQAABAAAR1BPU4VHMdkAABdEAAAWjEdTVUKOao6oAA
 </div>
 <div class="why"><b>Dlaczego to dobry punkt odniesienia.</b> EEF publikuje zarówno listę metaanaliz (<a href="http://web.archive.org/web/20200919094311/https://educationendowmentfoundation.org.uk/evidence-summaries/teaching-learning-toolkit/meta-cognition-and-self-regulation/">EEF, 2018</a>), jak i wszystkie 355 efektów z błędami standardowymi (<a href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/metacognition-and-self-regulation/technical-appendix">EEF, b.d.</a>). Dla każdego kroku znamy więc poprawny wynik (<i>ground truth</i>): co powinno zostać znalezione, co włączone i jaka wartość powinna wyjść.<br><br><b>Od czego zależy trudność.</b> Screening maszynowy działa tym gorzej, im słabiej rekordy trafne oddzielają się od nietrafnych (<a href="https://doi.org/10.1017/rsm.2024.16">Ali i in., 2025</a>). Jak wypada na tej skali nasza pula, sprawdzamy w wynikach.</div>
 </div></div>
-</section>
-<section id="co-już-wiadomo-o-llm-ach-w-przeglądach-systematycznych" class="slide level2">
-<h2>Co już wiadomo o LLM-ach w przeglądach systematycznych</h2>
-<div class="kickrow"><div class="kicker"><span class="sec">3 · Przegląd literatury</span>pojedyncze kroki są już zbadane</div></div>
-<div class="three">
-<div><b class="h">Screening tytułów i abstraktów</b><span class="lab">najlepiej zbadany krok</span>
-<ul>
-<li>GPT-3.5: czułość (recall) 81–97% przy swoistości (specificity) 26–80% (<a href="https://doi.org/10.7326/M23-3389">Tran i in., 2024</a>)</li>
-<li>GPT-4: wyniki od słabych do umiarkowanych dla abstraktów, bardzo dobre dla pełnych tekstów (<a href="https://doi.org/10.1002/jrsm.1715">Khraisha i in., 2024</a>)</li>
-<li>Metaanaliza 14 modeli: łączna czułość (recall) i swoistość (specificity) bliskie 90% (<a href="https://doi.org/10.21037/jmai-24-408">Kim i in., 2025</a>)</li>
-</ul></div>
-<div class="g"><b class="h">Ekstrakcja danych</b><span class="lab">mniej badań, małe próby</span>
-<ul>
-<li>Trafność (accuracy) 96%: model poprawnie wydobył 154 ze 160 pól danych z 10 badań randomizowanych (<a href="https://doi.org/10.1002/jrsm.1710">Gartlehner i in., 2024</a>)</li>
-<li>Ocenia się trafność pojedynczych pól, a nie to, czy z wydobytych liczb wychodzi to samo łączne oszacowanie</li>
-</ul></div>
-<div class="o"><b class="h">Od czego zależy skuteczność</b><span class="lab">trudność zadania</span>
-<ul>
-<li>Screening maszynowy działa tym lepiej, im wyraźniej rekordy trafne oddzielają się od nietrafnych w przestrzeni osadzeń (<a href="https://doi.org/10.1017/rsm.2024.16">Ali i in., 2025</a>)</li>
-<li>W ośmiu przeglądach klasyfikatory oszczędzały od 1% do 76% pracy przy 95% czułości (recall); GPT-3.5 i GPT-4 dały równie duży rozrzut</li>
-</ul></div>
-</div>
-<div class="why" style="margin-top:18px"><b>Luka badawcza.</b> Przywołane prace oceniają pojedyncze kroki. Nie pokazują, czy cały łańcuch — od wyszukiwania, przez selekcję i ekstrakcję, po łączne oszacowanie — odtwarza opublikowaną metaanalizę, w której każdy krok ma znaną odpowiedź. Nie wiadomo też, co lektura tekstów przez model wnosi <i>ponad</i> odtworzenie pracy człowieka: czy model dostrzega to, czego w ręcznie zbudowanej bazie brakuje.</div>
 </section>
 <section id="co-sprawdzam-cztery-pytania-badawcze" class="slide level2">
 <h2>Co sprawdzam: cztery pytania badawcze</h2>
